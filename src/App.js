@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import RealMadrid from "./assets/real-madrid.png";
+import ConditionalRender from './components/ConditionalRender';
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Avançando em react</h1>
+      {/* Imagem em /public */}
+      <img src="/spfc.jpg" alt="spfc"></img>
+      {/*Imagem em src/assets */}
+      <div>
+        <img src={RealMadrid} alt="real Madrid" />
+      </div>
+      <ManageData />
+      <ListRender/>
+      <ConditionalRender/>
     </div>
+
   );
 }
 
