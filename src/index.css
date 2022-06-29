@@ -6,9 +6,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 500px;
+  color: red;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.red-title {
+  background-color: black;  
+  color: red;
+  padding: 15px;
+  border: 5px solid blue;
+}
+
+.title {
+  background-color: black;
+  color: white;
 }
